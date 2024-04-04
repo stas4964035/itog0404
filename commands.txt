@@ -1,0 +1,35 @@
+user@user-Lenovo-G580:~/itog0404$ cat >> homepets.txt
+cats
+dogs
+hurones
+user@user-Lenovo-G580:~/itog0404$ cat > farmpets.txt
+horses
+camels
+donkeys
+user@user-Lenovo-G580:~/itog0404$ cat homepets.txt farmpets.txt > allpets.txt
+user@user-Lenovo-G580:~/itog0404$ cat allpets.txt 
+cats
+dogs
+hurones
+horses
+camels
+donkeys
+user@user-Lenovo-G580:~/itog0404$ mv allpets.txt humanfriends.txt
+user@user-Lenovo-G580:~/itog0404$ dir
+commands.txt  farmpets.txt  homepets.txt  humanfriends.txt
+user@user-Lenovo-G580:~/itog0404$ mkdir newdir
+user@user-Lenovo-G580:~/itog0404$ mv humanfriends.txt newdir/
+user@user-Lenovo-G580:~/itog0404$ dir newdir/
+humanfriends.txt
+user@user-Lenovo-G580:~/itog0404$ sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.29-1_all.deb
+[sudo] password for user:
+Selecting previously unselected package mysql-apt-config.
+(Reading database ... 299974 files and directories currently installed.)
+Preparing to unpack .../mysql-apt-config_0.8.29-1_all.deb ...
+Unpacking mysql-apt-config (0.8.29-1) ...
+Setting up mysql-apt-config (0.8.29-1) ...
+user@user-Lenovo-G580:~/itog0404$ sudo apt-get update
+user@user-Lenovo-G580:~/itog0404$ sudo apt-get install mysql-workbench-community
+user@user-Lenovo-G580:~/itog0404$ sudo dpkg -r mysql-workbench-community
+
+
